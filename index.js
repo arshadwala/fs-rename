@@ -5,7 +5,7 @@ dirPath = "./lib/";
 const files = fs.readdirSync(dirPath);
 
 const rmPrefix = false;
-const rnExt = false;
+const rmExt = false;
 const fomart = false;
 const rewrite = true;
 
@@ -60,7 +60,7 @@ files.forEach((file) => {
     newFileName = newFileName + "#" + Number(weights[index]);
 
   // add ext
-  if (!rnExt) newFileName = newFileName + fileExt;
+  if (!rmExt) newFileName = newFileName + fileExt;
 
   //
   //
